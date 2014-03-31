@@ -1,3 +1,3 @@
-require App
+require './app'
 
-run './app'
+run App
