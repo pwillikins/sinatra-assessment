@@ -13,6 +13,7 @@ feature "manage products" do
     click_on("Add a Product")
     fill_in "new_product", with: "snowboard"
     click_on("Create Product")
+    expect(page).to have_content("snowboard")
 
   end
 end
