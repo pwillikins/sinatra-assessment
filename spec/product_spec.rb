@@ -11,6 +11,8 @@ feature "manage products" do
     expect(page).to have_title("Welcome")
 
     click_on("Add a Product")
+    fill_in "new_product", with: "snowboard"
+    click_on("Create Product")
 
   end
 end
