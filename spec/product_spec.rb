@@ -10,5 +10,7 @@ feature "manage products" do
     visit('/')
     expect(page).to have_title("Welcome")
 
+    click_on("Add a Product")
+
   end
 end
